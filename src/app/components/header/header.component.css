@@ -1,0 +1,457 @@
+
+@font-face {
+  font-family: 'Nunito Semibold';
+  src: url('../../../assets/fonts/Nunito-SemiBold.ttf');
+}
+
+* {
+  font-family: 'Nunito Semibold';
+}
+
+.navbar-wrapper {
+
+}
+
+
+
+@media screen and (max-width: 9000px) and (min-width: 1400px){
+  .header-wrapper > a > img{
+    height: 30px;
+    width: 100px;
+    margin: 0;
+  }
+  .nanosoftLink img{
+    position: relative;
+    right: 48px;
+  }
+}
+
+/* Header Info */
+.header-wrapper{
+  width: 100%;
+  height: 45px;
+  background-color: #1e1e1e;
+  position: relative;
+}
+
+.header-wrapper > .person1{
+  max-height: 20px;
+  max-width: 25px;
+  position: relative;
+  top: 12px;
+  left: 9%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1000px){
+  .person1{
+    opacity: 0;
+  }
+}
+
+.contactNumber{
+  position: relative;
+  left: 11%;
+  bottom: 8px;
+  margin: 0;
+  font-size: 16px;
+  color: #e5e5e5;
+  max-width: 260px;
+  height: 17px;
+}
+
+@media screen and (max-width: 400px){
+  .contactNumber{
+    font-size: 14px;
+  }
+  .contactNumber .number{
+    font-size: 14px;
+  }
+}
+
+.contactNumber > a{
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.number{
+  position: relative;
+  margin-left: 15px;
+  color: #fffdd0;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.fb:hover{
+  text-decoration: none;
+}
+
+/* Eksterni Linkovi */
+
+.contactFacebook{
+  position: relative;
+  left: 65%;
+  bottom: 30px;
+}
+
+.contactFacebook > img{
+  border-radius: 10px;
+  opacity: 0.7;
+  width: 6%;
+}
+
+.contactFacebook > img:hover{
+  opacity: 1;
+}
+
+.nanosoftLink{
+  position: relative;
+  left: 73.3%;
+  bottom: 30px;
+}
+
+.nanosoftLink > img{
+  border-radius: 10px;
+  opacity: 0.8;
+  width: 6%;
+}
+
+.nanosoftLink > img:hover{
+  opacity: 1;
+}
+
+.beoleksLink{
+  position: relative;
+  left: 59.7%;
+  bottom: 30px;
+}
+
+.beoleksLink > img{
+  border-radius: 10px;
+  opacity: 0.8;
+  width: 6%;
+}
+
+.beoleksLink > img:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) and (min-width: 600px){
+  .contactFacebook > img,
+  .beoleksLink > img,
+  .nanosoftLink > img{
+    width: 8.2%;
+  }
+  .beoleksLink{
+    left: 56.2%;
+  }
+}
+
+/* Facebook, Beoleks, Nanosoft linkovi se prikazuju u navbaru
+  kada navbar nestane i pojavi se dugme za navbar (meni)
+ */
+@media only screen and (min-width: 766px){
+  .ulDropLinkovi > li{
+    display:none;
+  }
+}
+
+/* Navbar static*/
+.navbar-brand{
+  max-width: 180px;
+  height: 80px;
+  padding: 0;
+}
+
+.navBar{
+  height: 81px;
+  margin-bottom: 0px;
+  background-color: black;
+}
+
+.navBar .navA > li > a,
+.navbar-brand{
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 80px;
+}
+
+#navbar > .navA > li > a{
+  color: #f0670c;
+  font-size: 15px;
+  font-weight: light;
+  font-family: 'Nunito Semibold';
+}
+
+#navbar > .navA > li > a:hover{
+  opacity: 0.9;
+  color: #f17624;
+}
+
+.navActive{
+  background-color: #191919;
+}
+
+ .dropNavActive{
+   background-color: #f3853c;
+ }
+
+.dropdown-menu{
+  background-color: #f0670c;
+}
+
+.dropdown-menu > li > a{
+  color: black;
+}
+
+@media only screen and (max-width: 767px){
+  .navbar-collapse {
+    max-width: 200px;
+    border: 2px solid;
+    border-radius: 3px;
+    background-color: black;
+  }
+  .contactFacebook,
+  .nanosoftLink,
+  .beoleksLink{
+    visibility: hidden;
+    display: none;
+  }
+
+  .ulDropLinkovi{
+    width: 130px;
+    list-style-type: none;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  .ulDropLinkovi > li{
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+  }
+
+  .ulDropLinkovi > li > a > img {
+    border-radius: 5px;
+  }
+
+  .dropDot1,
+  .dropDot2,
+  .dropDot3{
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+    height: 5px;
+    width: 5px;
+    background-color: #202020;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .ulDropLinkovi li:hover .dropDot1{
+    background-color: #e5e5e5;
+  }
+  .ulDropLinkovi li:hover .dropDot2{
+    background-color: #e5e5e5;
+  }
+  .ulDropLinkovi li:hover .dropDot3{
+    background-color: #e5e5e5;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .navbar-header > a > img{
+    width: 130px;
+    height: 60px;
+    margin-top: 15px;
+  }
+}
+
+/* Sadrzaj u kontejneru ispod Carousel-a */
+.marketing{
+  padding-top: 10px;
+}
+
+.horizontalSeparator{
+  margin-top: 35px;
+  max-width: 900px;
+  color: red;
+}
+
+.dobrodosli > img{
+  max-width: 50%;
+  min-width: 220px;
+  min-height: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.indoorHighlighted{
+  font-weight: bold;
+}
+
+.textDobrodosliPocetna{
+  font-size: 16px;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+
+/* Stranice naslovi i tekstovi */
+.textDobrodosliAdaptacije,
+.textDobrodosliDnevneSobe,
+.textDobrodosliKuhinje,
+.textDobrodosliPlakariStandardni,
+.textDobrodosliPlakariKlizni,
+.textDobrodosliDecijeSobe {
+  font-size: 15px;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.straniceSecondHeading {
+  font-size: 21px;
+}
+
+@media screen and (max-width: 400px) and (min-width: 294px){
+  .dobrodosli > img{
+    left: 13%;
+  }
+  .horizontalSeparator{
+    margin-top: 25px;
+    padding-top: 0px;
+  }
+}
+
+.col-lg-4 > img{
+  display: block;
+  margin: 0 auto;
+}
+
+.col-lg-4 > h2{
+  text-align: center;
+}
+
+.col-lg-4 > .colParagraph{
+  padding: 0;
+  text-align: center;
+}
+
+.colBtn{
+ text-align: center;
+}
+
+@media screen and (max-width: 900px) and (min-width: 294px){
+  .col-lg-4 > img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.frontpageThumbnail{
+  width: 350px;
+  height: 200px;
+}
+
+.featureIndoorSmall{
+  position: relative;
+  top: -4px;
+  border-radius: 3px;
+}
+
+.col-md-7 > h2{
+  color: black;
+  font-size: 30px;
+}
+
+.col-md-7 > .lead{
+  font-size: 15px;
+}
+
+.featurette-image{
+  height: 250px;
+  width: 430px;
+  border-radius: 3px;
+}
+
+.dobrodosli {
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 600px){
+  .dobrodosli {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 780px) and (min-width: 540px){
+  .col-md-7 > .lead{
+    font-size: 15px;
+  }
+  .col-md-7 > h2{
+    font-size: 25px;
+  }
+  .featurette-image{
+    height: 200px;
+    width: 380px;
+  }
+  .textDobrodosliPocetna{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 540px){
+  .dobrodosli {
+    margin-bottom: 20px;
+  }
+  .pocetna-heading {
+    font-size: 26px;
+  }
+  .featureIndoorSmall{
+    max-width: 60px;
+    vertical-align: text-bottom;
+  }
+  .straniceHeading {
+    font-size: 26px;
+  }
+  .straniceSecondHeading{
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .dobrodosli > p,
+  .dobrodosliAdaptacije > p,
+  .dobrodosliDnevneSobe > p,
+  .dobrodosliKuhinje > p,
+  .dobrodosliPlakariStandardni > p,
+  .dobrodosliPlakariKlizni > p,
+  .dobrodosliDecijeSobe > p {
+    font-size: 12px;
+  }
+  .col-md-7 > .lead{
+    padding: 10px;
+    font-size: 12px;
+  }
+  .col-md-7 > h2{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  .featurette-image{
+    height: 120px;
+    width: 210px;
+  }
+  footer{
+    font-size: 10px;
+  }
+  .footerCopyright > img{
+    width: 80px;
+    height: 26px;
+  }
+}

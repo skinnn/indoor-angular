@@ -1,0 +1,115 @@
+
+@font-face {
+  font-family: 'Nunito Semibold';
+  src: url('../../../assets/fonts/Nunito-SemiBold.ttf');
+}
+
+
+@media only screen and (max-width: 540px){
+  .dobrodosli {
+    margin-bottom: 20px;
+  }
+  .pocetna-heading {
+    font-size: 26px;
+  }
+  .featureIndoorSmall{
+    max-width: 60px;
+    vertical-align: text-bottom;
+  }
+  .straniceHeading {
+    font-size: 26px;
+  }
+  .straniceSecondHeading{
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .dobrodosli > p,
+  .dobrodosliAdaptacije > p,
+  .dobrodosliDnevneSobe > p,
+  .dobrodosliKuhinje > p,
+  .dobrodosliPlakariStandardni > p,
+  .dobrodosliPlakariKlizni > p,
+  .dobrodosliDecijeSobe > p {
+    font-size: 12px;
+  }
+  .col-md-7 > .lead{
+    padding: 10px;
+    font-size: 12px;
+  }
+  .col-md-7 > h2{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  .featurette-image{
+    height: 120px;
+    width: 210px;
+  }
+  .footerDiv{
+    font-size: 10px;
+  }
+  .footerCopyright > img{
+    width: 80px;
+    height: 26px;
+  }
+}
+
+
+
+/* Footer */
+.footerDiv {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Nunito Semibold', sans-serif;
+  background-color: #161616;
+  margin-top: 20px;
+  padding: 25px 0 25px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+.footerCopyright{
+  color: #f4f4f4;
+  position: relative;
+  top: 5px;
+}
+
+.copyrightAndYear{
+  font-size: 13px;
+}
+
+.indoorCopyrightOrange{
+  font-size: 15px;
+  color: #f0670c;
+  font-weight: 600;
+}
+
+.footerCopyright > img{
+  border-radius: 3px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.footerLink{
+  bottom: 15px;
+  margin-left: 4px;
+  text-decoration: none;
+  color: #f0670c;
+  font-family: 'Nunito Semibold', sans-serif;
+}
+
+.whiteDot{
+  color: white;
+  text-decoration: none;
+}
+
+.authorName{
+  color: white
+}
+
+.Link:hover{
+  text-decoration: none;
+  opacity: 0.9;
+  color: white;
+}

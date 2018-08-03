@@ -1,0 +1,55 @@
+<!-- HEADER Wrapper -->
+<div class="header-wrapper">
+  <img class="person1" src="./assets/images/person.png" alt="Person Icon" />
+  <p class="contactNumber"><a title="Kliknite za broj" href="tel:+381648949085" (click)="showNumber()">Kontakt telefon <span id="numberShow" class="number">+381 64 8949085</span></a></p>
+  <a title="Facebook stranica" href="https://www.facebook.com/InDoor-246674172152061" target="_blank" class="contactFacebook"><img src="./assets/images/contactFacebook90x30.png"></a>
+  <a title="Agencija za izradu softwera" href="https://nanosoft.ls.rs" target="_blank" class="nanosoftLink"><img src="./assets/images/nanosoft90x30.png"></a>
+  <a title="Beoleks - bela tehnika" href="http://www.beoleks.rs" target="_blank" class="beoleksLink"><img src="./assets/images/leksgroup90x30.png"></a>
+</div> <!-- ./ HEAD Wrapper -->
+
+<!-- NAVBAR Wrapper -->
+  <div class="navbar-wrapper container-fullwidth">
+
+    <nav class="navbar navbar-inverse navbar-static-top navBar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" title="Otvorite meni">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" routerLink="/"><img src="./../assets/images/logo/logo-black.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navA">
+            <li class="navActive"><a routerLink="/">Pocetna</a></li>
+            <li><a routerLink="/kuhinje">Kuhinje</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plakari <span class="glyphicon glyphicon-th-list"></span></a>
+              <ul class="dropdown-menu">
+                <li><a routerLink="/klizni-plakari">Plakari sa kliznim vratima</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a routerLink="/standardni-plakari">Standardni plakari</a></li>
+              </ul>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobe <span class="glyphicon glyphicon-th-list"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a routerLink="/dnevne-sobe">Dnevne sobe</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a routerLink="/decije-sobe">Decije sobe</a></li>
+                </ul>
+              </li>
+            <li><a routerLink="/adaptacije">Adaptacije</a></li>
+            <li><a routerLink="/kontakt" class="navbarKontakt">Kontakt</a></li>
+          </ul>
+          <ul class="ulDropLinkovi">
+            <li><span class="dropDot1"></span><a title="Facebook stranica" href="https://www.facebook.com/InDoor-246674172152061" target="_blank"><img src="./../assets/images/contactFacebook90x30.png"></a><span class="dropDot1"></span></li>
+            <li><span class="dropDot2"></span><a title="Agencija za izradu softwera" href="https://nanosoft.ls.rs" target="_blank"><img src="./../assets/images/nanosoft90x30.png"></a><span class="dropDot2"></span></li>
+            <li><span class="dropDot3"></span><a title="Beoleks - bela tehnika" href="http://www.beoleks.rs" target="_blank"><img src="./../assets/images/leksgroup90x30.png"></a><span class="dropDot3"></span></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div> <!-- ./ NAVBAR wrapper -->
